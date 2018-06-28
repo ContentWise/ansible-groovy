@@ -27,6 +27,7 @@ provisioner:
   idempotency_test: true
   require_chef_for_busser: true
   require_ruby_for_busser: false
+  requirements_path: test/integration/requirements.yml
 
 suites:
   - name: default

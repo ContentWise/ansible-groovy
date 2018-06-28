@@ -10,5 +10,5 @@
 - name: create simbolic link from {{ groovy_install_dir }} to {{ groovy_home }}
   file:
     state: link
-    dest: "{{ groovy_install_dir }}"
-    src: "{{ groovy_dest }}"
+    dest: "{{ groovy_home }}"
+    src: "{{ groovy_install_dir }}"
