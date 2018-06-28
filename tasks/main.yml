@@ -1,4 +1,7 @@
 ---
+- name: ensure unzip is installed
+  package:
+    name: unzip
 - name: download and extract Groovy
   unarchive:
     src: "{{ groovy_package_url }}"
