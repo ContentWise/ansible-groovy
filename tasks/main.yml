@@ -1,0 +1,11 @@
+---
+- name: download and extract Groovy
+  unarchive:
+    src: "{{ groovy_package_url }}"
+    dest: "/opt"
+    remote_src: yes
+- name: create simbolic link from {{ groovy_install_dir }} to {{ groovy_home }}
+  file:
+    state: link
+    dest: "{{ groovy_install_dir }}"
+    src: "{{ groovy_dest }}"
